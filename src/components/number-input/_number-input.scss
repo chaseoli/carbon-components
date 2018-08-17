@@ -129,7 +129,7 @@
     }
   }
 
-  .#{$prefix}--number[data-invalid] {
+  .#{$prefix}--number[data-invalid="true"] {
     .#{$prefix}--form-requirement {
       display: inline-block;
       max-height: rem(200px);

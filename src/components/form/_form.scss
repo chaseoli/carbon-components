@@ -50,10 +50,10 @@
     height: rem(14px);
   }
 
-  input[data-invalid],
-  textarea[data-invalid],
-  select[data-invalid],
-  div[data-invalid] {
+  input[data-invalid="true"],
+  textarea[data-invalid="true"],
+  select[data-invalid="true"],
+  div[data-invalid="true"] {
     box-shadow: 0 2px 0px 0px $support-01;
 
     ~ .#{$prefix}--form-requirement {
@@ -63,7 +63,7 @@
   }
 
   // Fix for red ring when input is marked required in Firefox, refs #744
-  input:not(output):not([data-invalid]):-moz-ui-invalid {
+  input:not(output):not([data-invalid="true"]):-moz-ui-invalid {
     box-shadow: none;
   }
 

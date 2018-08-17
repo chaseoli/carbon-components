@@ -61,12 +61,12 @@
       color: $text-02;
     }
 
-    &[data-invalid],
-    &[data-invalid]:focus {
+    &[data-invalid="true"],
+    &[data-invalid="true"]:focus {
       box-shadow: 0 2px 0 0 $support-01;
     }
 
-    &[data-invalid]:focus ~ .#{$prefix}--label {
+    &[data-invalid="true"]:focus ~ .#{$prefix}--label {
       color: $support-01;
     }
 
@@ -82,7 +82,7 @@
       }
     }
 
-    &[data-invalid] ~ .#{$prefix}--form-requirement {
+    &[data-invalid="true"] ~ .#{$prefix}--form-requirement {
       overflow: visible;
       max-height: 0;
       margin-top: $spacing-2xs;
